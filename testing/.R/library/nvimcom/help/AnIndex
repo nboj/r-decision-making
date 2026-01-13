@@ -1,0 +1,17 @@
+nvimcom-package	nvimcom-package
+etags2ctags	etags2ctags
+nvim.interlace.rmd	nvim.interlace.rmd
+nvim.interlace.rnoweb	nvim.interlace.rnoweb
+nvim.list.args	nvim.list.args
+nvim.names	nvim.names
+nvim.plot	nvim.plot
+nvim.print	nvim.print
+nvim.srcdir	nvim.srcdir
+nvimcom	nvimcom-package
+Rnvim.block	Rnvim.source
+Rnvim.chunk	Rnvim.source
+Rnvim.function	Rnvim.source
+Rnvim.paragraph	Rnvim.source
+Rnvim.selection	Rnvim.source
+Rnvim.source	Rnvim.source
+vi	vi
