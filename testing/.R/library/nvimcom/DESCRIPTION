@@ -1,6 +1,6 @@
 Package: nvimcom
-Version: 0.9.82
-Date: 2026-01-06
+Version: 0.9.86
+Date: 2026-01-31
 Title: Intermediate the Communication Between R and Neovim
 Author: Jakson Aquino
 Maintainer: Jakson Alves de Aquino <jalvesaq@gmail.com>
@@ -11,5 +11,5 @@ Encoding: UTF-8
 Description: Provide a service to intermediate the communication between R and Neovim.
 License: GPL (>= 2)
 NeedsCompilation: yes
-Packaged: 2026-01-12 20:17:16 UTC; cauman
-Built: R 4.5.2; x86_64-pc-linux-gnu; 2026-01-12 20:17:16 UTC; unix
+Packaged: 2026-02-06 18:28:04 UTC; cauman
+Built: R 4.5.2; x86_64-pc-linux-gnu; 2026-02-06 18:28:04 UTC; unix

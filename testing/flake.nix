@@ -25,6 +25,11 @@
             rPackages.jsonlite # optional but common
             rPackages.rmarkdown # if you do Rmd/Quarto-ish work
             rPackages.pagedown
+            rPackages.tidyverse
+            rPackages.dplyr
+            rPackages.nycflights13
+            rPackages.ggplot2
+            texliveFull
             chromium
             pandoc
           ];
