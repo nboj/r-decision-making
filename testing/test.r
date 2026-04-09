@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 library(tidyverse)
 set.seed(100)
 rnorm(1)
@@ -41,3 +42,28 @@ dotchart(
 )
 
 plot(seq_along(res), res, type = "b")
+=======
+options(digits = 10)
+f <- function(x) {
+    (2 * cos(7 * x)) / x
+}
+
+n <- 8
+start <- 1
+end <- 5
+inc <- (end - start) / n
+
+accum <- 0
+
+for (i in 0:n) {
+    if (i == 0 || i == n) {
+        accum <- accum + f(start + i * inc)
+    } else if (i %% 2 != 0) {
+        accum <- accum + 4 * f(start + i * inc)
+    } else {
+        accum <- accum + 2 * f(start + i * inc)
+    }
+}
+
+accum * (inc / 3)
+>>>>>>> Stashed changes

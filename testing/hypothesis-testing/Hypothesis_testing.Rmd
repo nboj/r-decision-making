@@ -1,0 +1,219 @@
+---
+title: "Decision Making Under Uncertainty, MATH 20011"
+subtitle: "Homework 2: Hypothesis Testing"
+author: "YOUR NAME HERE"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Instructions
+
+* Replace "Your Name Here" in the author field above with your name.
+
+* Follow the prompts in each part of this assignment and edit this .Rmd file directly. There are four parts to this assignment.
+
+* Knit your finished document as PDF and submit the PDF on Canvas.
+
+
+# Libraries
+
+```{r library, echo = TRUE, message = FALSE, warning = FALSE}
+library(openintro) # Library required to access our dataset
+library(ggplot2) # Library required for visualization
+library(dplyr) # Library required for data tidying and manipulation
+```
+
+
+# PART 1: Data Exploration 
+
+We will use the `heart_transplant` dataset from the `openintro` package for this lab.
+
+(a) Load the specified data set. Hint: use `data()`
+
+```{r}
+
+```
+
+(b) Compactly display the internal structure of the data. Hint: use `str()`
+
+```{r}
+
+```
+
+(c) View the first 6 rows of your data. Hint: use `head()`
+
+```{r}
+
+```
+
+(d) Replace `eval=FALSE` with `eval=TRUE`. Explain the purpose and output of the following R code. 
+
+```{r eval=FALSE}
+heart_transplant |> filter(!is.na(wait))
+```
+
+**Question:**
+
+Based on your observations from the (a) - (d) and the information provided by (openintro)[https://www.openintro.org/data/index.php], describe the `heart_transplant` dataset. Your description must include, but not limited to:
+
+- How many observations are in this dataset?
+
+- What variables are included? Identify which are categorical and which are numerical.
+
+- Why some entries in the `wait` column are `NA`?
+
+**Answer:**
+
+
+\newpage
+
+# Part 2: Data Summary and Visualization
+
+(a) Generate a summary statistics of the data. Hint: use `summary()`
+
+```{r}
+
+```
+
+(b) Create a bar chart showing the number of patients by treatment. Hint: use the `transplant` variable. 
+
+```{r}
+
+```
+
+(c) Create a histogram of patient ages. Hint: use the `age` variable. 
+
+```{r}
+
+```
+
+(d) Create a boxplot comparing survival time (`survtime`) by treatment (`transplant`) group.
+
+```{r}
+
+```
+
+(e) Create a scatterplot of `age` vs. `survtime` with color as `transplant`.
+
+```{r}
+
+```
+
+**Questions:**
+
+Based on your observation from (a) - (e), describe your data using the following prompts: 
+
+- The distribution of the age.
+
+- The group (treatment/control) with the longest median survival time.
+
+- Relationship between age and survival time.
+
+**Answer:**
+
+
+
+\newpage
+
+# Part 3: Hypothesis Test for a Proportion
+
+(a) Create a binary variable indicating whether a patient survived more than 30 days post-transplant. Store the new tibble in a new tibble `heart_transplant2`
+
+```{r}
+
+```
+
+(b) Replace `eval=FALSE` with `eval=TRUE`. Performing hypothesis test for one population proportion. 
+
+```{r eval=FALSE}
+x <- sum(heart_transplant2$survtime_30)
+n <- nrow(heart_transplant2)
+
+prop.test(x = x, n = n, p = 0.5, alternative = "two.sided", conf.level = 0.95)
+```
+
+**Questions:**
+
+- Explain each line of code within the code chunk in (b)
+
+**Answer:**
+
+- What is the sample proportion of patients who survived beyond 30 days?
+
+**Answer:**
+
+- Interpret the $95\%$ confidence interval in context of the study.
+
+**Answer:**
+
+- State the null and alternative hypotheses for this test.
+
+**Answer:**
+
+- What is the p-value? 
+
+**Answer:**
+
+- Do you reject or fail to reject the null hypothesis at $\alpha = 0.05$ and why?
+
+**Answer:**
+
+- Interprete the result of the hypothesis test.
+
+**Answer:**
+
+
+
+\newpage 
+
+# Part 4: Hypothesis Test for a Mean
+
+In this part, we are interested in knowing whether the average age of heart transplant patients is different from 50 years?
+
+Replace `eval=FALSE` with `eval=TRUE` to see the result from the code chunk.
+
+```{r eval=FALSE}
+t.test(heart_transplant2$age, mu = 50, alternative = "two.sided", conf.level = 0.95)
+```
+
+**Questions:** Provide answers to the following questions:
+
+- Explain the line of code within the code chunk in this part
+
+**Answer:**
+
+- What is the sample mean age of the patients?
+
+**Answer:**
+
+- Interpret the $95\%$ confidence interval in context of the study.
+
+**Answer:**
+
+- State the null and alternative hypotheses for this test.
+
+**Answer:**
+
+- What is the p-value? 
+
+**Answer:**
+
+- Do you reject or fail to reject the null hypothesis at $\alpha = 0.05$ and why?
+
+**Answer:**
+
+- Interprete the result of the hypothesis test.
+
+**Answer:**
+
+
+
+
+
+
+
+
