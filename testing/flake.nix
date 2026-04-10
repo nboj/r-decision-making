@@ -25,15 +25,13 @@
             rPackages.jsonlite # optional but common
             rPackages.rmarkdown # if you do Rmd/Quarto-ish work
             rPackages.pagedown
-<<<<<<< Updated upstream
             rPackages.tidyverse
             rPackages.dplyr
             rPackages.nycflights13
             rPackages.ggplot2
             texliveFull
-=======
             rPackages.plotly
->>>>>>> Stashed changes
+            rPackages.openintro
             chromium
             pandoc
           ];

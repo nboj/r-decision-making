@@ -35,24 +35,26 @@ We will use the `heart_transplant` dataset from the `openintro` package for this
 (a) Load the specified data set. Hint: use `data()`
 
 ```{r}
-
+data(heart_transplant)
 ```
 
 (b) Compactly display the internal structure of the data. Hint: use `str()`
 
 ```{r}
-
+str(heart_transplant)
 ```
 
 (c) View the first 6 rows of your data. Hint: use `head()`
 
 ```{r}
-
+head(heart_transplant, 6)
 ```
 
 (d) Replace `eval=FALSE` with `eval=TRUE`. Explain the purpose and output of the following R code. 
 
-```{r eval=FALSE}
+> The `eval=TRUE` parameter will not show any results when knitting, so you won't see the actual table on the PDF.
+
+```{r eval=TRUE}
 heart_transplant |> filter(!is.na(wait))
 ```
 
@@ -66,7 +68,25 @@ Based on your observations from the (a) - (d) and the information provided by (o
 
 - Why some entries in the `wait` column are `NA`?
 
+
 **Answer:**
+
+```{r eval=TRUE}
+nrow(heart_transplant)
+ncol(heart_transplant)
+```
+
+There are 103 observations with 8 variables
+
+The 8 variables are:
+1. **id** - numerical quantitative
+2. **acceptyear** - categorical ordinal
+3. **age**
+4. **survived**
+5. **survtime**
+6. **prior**
+7. **transplant**
+8. **wait**
 
 
 \newpage
