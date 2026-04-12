@@ -29,6 +29,7 @@
             rPackages.dplyr
             rPackages.nycflights13
             rPackages.ggplot2
+            rPackages.openintro
             texliveFull
             rPackages.plotly
             rPackages.openintro
